@@ -11,7 +11,7 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 
-    @include transition;
+    transition: color var(--animation);
   }
   .header .link:hover,
   .header .link:focus {
@@ -20,7 +20,7 @@
   
   .link.current {
     color: var(--accent-txt-cl);
-    @include transition;
+    transition: color var(--animation);
   }
   
   .current::after {

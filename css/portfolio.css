@@ -243,8 +243,11 @@ align-items: baseline;
   margin-bottom: 9px; 
   
 }
+/*Form*/
+
 .form {
-  gap: 12px;
+  width: 570px;
+  margin-left: 93px;
 }
 .form-nav {
   margin: 0;
@@ -257,12 +260,8 @@ align-items: baseline;
 
   color: var(--main-bg-cl);
 }
-.options {
-  padding: 0;
-  margin: 0;
-  width: 570px;
-}
-.options-mail {
+
+.form-field {
   position: absolute;
   display: flex;
   padding: 0;
@@ -271,12 +270,8 @@ align-items: baseline;
   gap: 12px;
   text-decoration: none;
 }
-.form-field {
-  width: 570px;
-  margin-left: 93px;
-}
 
-.form-field input {
+.form input {
   width: 358px;
   margin: 0;
 
@@ -290,11 +285,11 @@ align-items: baseline;
   background-color: inherit;
   transition: border-color var(--animation);
 }
-.form-field input:hover {
+.form input:hover {
   border-color: var(--accent-bg-cl);
 }
 
-.form-field input::placeholder {
+.form input::placeholder {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -339,9 +334,8 @@ align-items: baseline;
 }
 
 
-.form-email {
-  display: flex;
-}
+
+
 /*icons*/
 .contacts-link {
   display: flex;
@@ -450,6 +444,7 @@ align-items: baseline;
 .btn:hover,
 .btn:focus {
   background-color: var(--secondary-accent-bg-cl);
+  color:#ffffff;
 }
 
 .btn.current {

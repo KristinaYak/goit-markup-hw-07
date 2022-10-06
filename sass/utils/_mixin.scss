@@ -5,9 +5,7 @@
     letter-spacing: 0.01em;
 }
 
-@mixin transition ($color: var(--animation), $border-color: var(--animation)) {
-    transition: $color, $border-color;
-}
+
 
 @mixin logo ($fw:700, $fs: 26, $lh:31, $ls: 0.03em) {
     font-weight: $fw;

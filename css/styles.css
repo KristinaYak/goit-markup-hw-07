@@ -76,7 +76,7 @@
 
 /*Menu Nav*/
 
-/* .nav {
+ /* .nav {
   display: flex;
   align-items: center;
 }
@@ -158,11 +158,11 @@
 }
 .nav__icon--contacts {
   fill: currentColor;
-} */
+}  */
 
 /*logo*/
 
-/* .nav__logo {
+ /* .nav__logo {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     font-weight: 700;
@@ -178,7 +178,7 @@
   
   .link .current {
     color: var(--accent-txt-cl);
-  }
+  } */
 
   /*header*/
 
@@ -219,7 +219,7 @@
     height: 4px;
   
     border-radius: 2px;
-  }  */
+  }   */
 
 /*section Ефективні рішення для вашого бізнесу*/
 
@@ -290,8 +290,8 @@
   .btn:hover,
   .btn:focus {
     background-color: var(--secondary-accent-bg-cl);
-  }
- */
+  } */
+
 
 /*Наші особливості*/
 
@@ -459,9 +459,9 @@
   margin-top: 10px;
   margin-bottom: 16px;
   text-align: center;
-} */
+}
 
-/* .socials {
+.socials {
   display: flex;
   gap: 10px;
   padding: 0;
@@ -592,8 +592,8 @@
 }
 .footer__logo.active {
   color: var(--accent-txt-cl);
-} */
-/* .adress {
+} 
+ .adress {
   margin-top: 20px;
 }
 .adress__item {
@@ -634,7 +634,7 @@ color: var(--main-bg-cl);
 } */
 
 /*Form*/
-/* .form__nav {
+.form__nav {
   margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -648,7 +648,13 @@ color: var(--main-bg-cl);
 
 
 .form__field {
+   position: absolute;
+  display: flex;
+  padding: 0;
+  margin: 0;
+
   gap: 12px;
+  text-decoration: none;
 }
 .form {
   width: 570px;
@@ -715,7 +721,7 @@ color: var(--main-bg-cl);
   
   fill: currentColor;
   margin-left: 10px;
-} */
+}
 
 /*Модальне вікно*/
 
@@ -735,9 +741,9 @@ color: var(--main-bg-cl);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
-} */
+}
 
-/* .modal {
+.modal {
   position: absolute;
   padding: 40px;
   top: 50%;
@@ -785,8 +791,8 @@ color: var(--main-bg-cl);
 .modal__icon:focus {
   color: var(--accent-txt-cl);
 }
-
  */
+
 
 /*Register form*/
 
@@ -811,7 +817,12 @@ color: var(--main-bg-cl);
 .register__form--field {
   position: relative;
   display: block;
+  margin-bottom: 10px;
+
+  
 }
+
+
 .register__form--label {
   display: block;
   font-family: inherit;
@@ -819,11 +830,13 @@ color: var(--main-bg-cl);
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
-
   letter-spacing: 0.01em;
 
   color: var(--light-txt-cl);
+
 }
+
+
 
 .register__form--input {
   width: 100%;
@@ -853,6 +866,7 @@ color: var(--main-bg-cl);
   fill: var(--accent-txt-cl);
 }
 
+
 .register__form--heading {
   display: block;
   font-weight: 400;
@@ -873,6 +887,14 @@ color: var(--main-bg-cl);
   outline: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  
+
+  transition: border var(--animation);
+}
+
+.register__form--message:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .register__form--message::placeholder {
   font-weight: 400;
@@ -881,7 +903,9 @@ color: var(--main-bg-cl);
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+
 }
+
 
 .register__form--agreement {
   display: flex;

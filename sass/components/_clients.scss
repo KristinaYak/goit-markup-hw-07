@@ -28,7 +28,7 @@
     border-radius: 4px;
    
     
-    @include transition;
+    transition: color var(--animation), border-color var(--animation);
   }
 
 
